@@ -1,0 +1,22 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1744206465
+default_env.tres::Environment::-1::1744206442::0::1::::<><>::
+icon.png::CompressedTexture2D::3548011557162830721::1744206274::1744206466::1::::<><>::
+main.tscn::PackedScene::-1::1744206442::0::1::::<><>::res://new_script.gd<>res://src/Maze Generator.gd<>res://assets/AdobeStock_400161823.svg<>res://motion.gd<>res://WallBody.gd
+motion.gd::GDScript::-1::1744206442::0::1::::<>CharacterBody2D<>::
+new_script.gd::GDScript::-1::1744206442::0::1::::<>Node<>::
+README.md::TextFile::-1::1744206274::0::1::::<><>::
+VERSION.md::TextFile::-1::1744206274::0::1::::<><>::
+WallBody.gd::GDScript::-1::1744206442::0::1::::<>StaticBody2D<>::
+::res://addons/::1744206274
+::res://assets/::1744206274
+AdobeStock_400161823.svg::CompressedTexture2D::421290746995172694::1744206274::1744206466::1::::<><>::
+pngfind.com-running-png-483098.png::CompressedTexture2D::2665832439625755814::1744206274::1744206466::1::::<><>::
+::res://src/::1744206275
+Cell.gd::GDScript::-1::1744206442::0::1::::Cell<>RefCounted<>::
+Maze Generator.gd::GDScript::-1::1744206442::0::1::::MazeGenerator<>Node<>::
+Maze.gd::GDScript::-1::1744206442::0::1::::Maze<>RefCounted<>::
+::res://src/algorithms/::1744206275
+Algorithm.gd::GDScript::-1::1744206442::0::1::::Algorithm<>RefCounted<>::
+RecursiveBacktracker.gd::GDScript::-1::1744206442::0::1::::RecursiveBacktracker<>Algorithm<>::
+Utils.gd::GDScript::-1::1744206442::0::1::::Utils<>RefCounted<>::
