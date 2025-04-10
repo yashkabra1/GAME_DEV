@@ -1,0 +1,124 @@
+[gd_scene load_steps=7 format=3 uid="uid://dy1tqts0wy7tj"]
+
+[ext_resource type="Script" path="res://main menu/script/host.gd" id="1_7labw"]
+[ext_resource type="Texture2D" uid="uid://cx3k1e1atqee1" path="res://assests/Background Empty.png" id="2_pjxhw"]
+
+[sub_resource type="SystemFont" id="SystemFont_7mx33"]
+font_names = PackedStringArray("Gloucester MT")
+subpixel_positioning = 0
+
+[sub_resource type="SystemFont" id="SystemFont_re2fm"]
+font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
+
+[sub_resource type="SystemFont" id="SystemFont_5e72h"]
+font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
+
+[sub_resource type="SystemFont" id="SystemFont_q73r3"]
+font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
+
+[node name="host" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7labw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pjxhw")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+
+[node name="seperator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.298039, 0.101961, 0.439216, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_7mx33")
+theme_override_font_sizes/font_size = 62
+text = "HOST"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.5
+offset_top = -15.5
+offset_right = 85.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("SystemFont_re2fm")
+theme_override_font_sizes/font_size = 30
+placeholder_text = "NAME"
+alignment = 1
+
+[node name="create_button" type="Button" parent="."]
+custom_minimum_size = Vector2(120, 30)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.0
+offset_top = 60.5
+offset_right = 33.0
+offset_bottom = 91.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0.298039, 0.101961, 0.439216, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_5e72h")
+theme_override_font_sizes/font_size = 32
+text = "CREATE"
+
+[node name="back_Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.5
+offset_top = 125.0
+offset_right = 38.5
+offset_bottom = 173.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0.298039, 0.101961, 0.439216, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_q73r3")
+theme_override_font_sizes/font_size = 32
+text = "BACK"
